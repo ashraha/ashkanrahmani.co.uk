@@ -1,32 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coming Soon</title>
-  <style>
-    body {
-      margin: 0;
-      background: #111;
-      color: #fff;
-      font-family: sans-serif;
-      display: flex;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.2em;
-    }
-    p {
-      opacity: 0.6;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Coming Soon</h1>
-  <p>info@ashkanrahmani.co.uk</p>
+  <div class="container">
+    <h1>Coming Soon</h1>
+    <p>We are working hard to bring something amazing to you!</p>
+    <p>info@ashkanrahmani.co.uk</p>
+    <div id="countdown">
+      <div><span id="days">00</span> Days</div>
+      <div><span id="hours">00</span> Hours</div>
+      <div><span id="minutes">00</span> Minutes</div>
+      <div><span id="seconds">00</span> Seconds</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
