@@ -1,23 +1,311 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-GB">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coming Soon</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ash Tech — Web & Mobile Apps with AI</title>
+  <meta name="description"
+    content="Ash Tech designs and builds modern websites and mobile apps for UK clients — using AI to deliver faster, smarter, and more scalable results." />
+  <meta name="author" content="Ashkan Rahmani" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ash Tech — Web & Mobile Apps with AI" />
+  <meta property="og:description"
+    content="Modern, AI-assisted web & mobile development for UK clients. Get a quote today." />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:url" content="https://ashkanrahmani.co.uk" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YTS0KCHF41"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-G-YTS0KCHF41');
+  </script>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Coming Soon</h1>
-    <p>We are working hard to bring something amazing to you!</p>
-    <p>info@ashkanrahmani.co.uk</p>
-    <div id="countdown">
-      <div><span id="days">00</span> Days</div>
-      <div><span id="hours">00</span> Hours</div>
-      <div><span id="minutes">00</span> Minutes</div>
-      <div><span id="seconds">00</span> Seconds</div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Ash Tech home">
+        <div>
+          <img src="assets/Logo.png" alt="Ash Tech" height="40">
+          <strong>Ash Tech</strong>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#process">Process</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-small">Get a Quote</a>
+      </nav>
     </div>
-  </div>
-  <script src="script.js"></script>
+  </header>
+
+  <main id="home">
+    <!-- HERO -->
+    <section class="hero reveal">
+      <div class="glow glow-a"></div>
+      <div class="glow glow-b"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Designing <span class="accent">Websites</span> & <span class="accent">Mobile Apps</span> — powered by AI
+          </h1>
+          <p>I build fast, accessible, and beautiful products for UK clients. From landing pages to full apps, I use AI
+            to accelerate content, wireframes, and QA while keeping craftsmanship front and centre.</p>
+          <div class="cta-row">
+            <a class="btn" href="#contact">Get a Quote</a>
+            <a class="btn btn-ghost"
+              href="https://wa.me/447944552072?text=Hi%20Ash%20Tech%2C%20I%27d%20like%20to%20discuss%20a%20project."
+              target="_blank" rel="noopener" aria-label="Message on WhatsApp">Message on WhatsApp</a>
+          </div>
+          <ul class="hero-bullets">
+            <li>UK-based</li>
+            <li>Clear pricing</li>
+            <li>Quick turnarounds</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual img-reveal">
+          <div class="img-ph" aria-hidden="true">
+            <img src="assets/hero.jpg" alt="Ash Tech Hero Image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <div class="container about-grid">
+        <div class="about-media img-reveal">
+          <div class="img-ph" aria-hidden="true">
+            <img src="assets/about.jpg" alt="Ash Tech Hero Image">
+          </div>
+        </div>
+        <div class="about-copy">
+          <h2 class="section-title">About Ashkan</h2>
+          <p>Hello, I’m Ashkan. I help UK businesses move faster with clean design, reliable code, and practical AI. I
+            care about performance, accessibility, and maintainability — so what we ship stays solid.</p>
+          <ul class="list">
+            <li>Websites, mobile apps, and small product builds</li>
+            <li>AI-assisted content and testing to save time & budget</li>
+            <li>Source-controlled handovers and docs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <div class="cards-3">
+          <article class="card img-reveal">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Web Design & Development</h3>
+            <p>Marketing sites, landing pages, and full-stack apps built with modern, maintainable code.</p>
+            <ul class="list">
+              <li>Responsive, accessible, SEO-friendly</li>
+              <li>Static or CMS — GitHub Pages ready</li>
+              <li>Performance-first builds</li>
+            </ul>
+          </article>
+
+          <article class="card img-reveal">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <h3>Mobile Apps</h3>
+            <p>iOS & Android with a shared codebase — from prototype to store-ready.</p>
+            <ul class="list">
+              <li>React Native / Flutter options</li>
+              <li>Publishing guidance</li>
+              <li>Post-launch support</li>
+            </ul>
+          </article>
+
+          <article class="card img-reveal">
+            <i class="fa-solid fa-robot"></i>
+            <h3>AI-Assisted Delivery</h3>
+            <p>Use AI for faster research, UX copy, testing, and docs — quality intact.</p>
+            <ul class="list">
+              <li>Ideation & content suggestions</li>
+              <li>Automated checks & QA</li>
+              <li>Clear documentation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="cards-3">
+          <article class="card portfolio">
+            <!-- IMAGE PLACEHOLDER: replace with project thumbnail -->
+            <a class="thumb img-reveal" href="#" aria-label="Project 1"><img src="assets/portfolio-1.jpg"
+                alt="Project 1 thumbnail"></a>
+            <h3>Project Title</h3>
+            <p class="muted">Short one-liner about the impact/outcome.</p>
+          </article>
+
+          <article class="card portfolio">
+            <a class="thumb img-reveal" href="#" aria-label="Project 2"><img src="assets/portfolio-2.jpg"
+                alt="Project 2 thumbnail"></a>
+            <h3>Project Title</h3>
+            <p class="muted">Short one-liner about the impact/outcome.</p>
+          </article>
+
+          <article class="card portfolio">
+            <a class="thumb img-reveal" href="#" aria-label="Project 3"><img src="assets/portfolio-3.jpg"
+                alt="Project 3 thumbnail"></a>
+            <h3>Project Title</h3>
+            <p class="muted">Short one-liner about the impact/outcome.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Process</h2>
+        <div class="timeline">
+          <div class="step img-reveal">
+            <span class="step-num">01</span>
+            <h3>Discovery</h3>
+            <p>Quick call to define goals and scope — followed by a clear proposal.</p>
+          </div>
+          <div class="step img-reveal">
+            <span class="step-num">02</span>
+            <h3>Design</h3>
+            <p>Wireframes to high-fidelity designs; AI assists with copy where useful.</p>
+          </div>
+          <div class="step img-reveal">
+            <span class="step-num">03</span>
+            <h3>Build & QA</h3>
+            <p>Modern, maintainable code with performance and accessibility checks.</p>
+          </div>
+          <div class="step img-reveal">
+            <span class="step-num">04</span>
+            <h3>Launch & Support</h3>
+            <p>Deployment, handover docs, and optional support packages.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE / CONTACT -->
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <h2 class="section-title">Get a Quote</h2>
+        <p class="muted">Prefer WhatsApp? <a class="link"
+            href="https://wa.me/447944552072?text=Hi%20Ash%20Tech%2C%20I%27d%20like%20to%20get%20a%20quote."
+            target="_blank" rel="noopener">Message me here</a>.</p>
+
+        <form id="quote-form" class="form" method="POST" action="https://formspree.io/f/myzporor">
+          <div class="form-grid">
+            <label>
+              <span>Full name</span>
+              <input name="name" type="text" placeholder="Jane Smith" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" placeholder="you@example.com" required>
+            </label>
+            <label>
+              <span>Phone</span>
+              <input name="phone" type="tel" placeholder="+44 7xxx xxxxxx">
+            </label>
+            <label>
+              <span>Project type</span>
+              <select name="type" required>
+                <option value="">Select…</option>
+                <option>Website</option>
+                <option>Mobile App</option>
+                <option>Both</option>
+              </select>
+            </label>
+            <label class="full">
+              <span>Budget (approx.)</span>
+              <input name="budget" type="text" placeholder="e.g. £1,500–£3,000">
+            </label>
+            <label class="full">
+              <span>Project details</span>
+              <textarea name="message" rows="6" placeholder="Tell me about your goals, features, and timing…"
+                required></textarea>
+            </label>
+          </div>
+          <input type="hidden" name="_subject" value="New quote request — Ash Tech" />
+          <button type="submit" class="btn">Submit</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/Logo.png" alt="Ash Tech" height="40">
+        <strong>Ash Tech</strong>
+        <p class="muted">info@ashkanrahmani.co.uk · <a class="link" href="tel:+447944552072">+44 7944 552072</a></p>
+      </div>
+      <div class="footer-links">
+        <a href="#privacy" class="link policy-link" data-open="privacy">Privacy Policy</a>
+        <a href="#terms" class="link policy-link" data-open="terms">Terms</a>
+      </div>
+      <p class="muted small">© <span id="year"></span> Ashkan Rahmani. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Simple policy modals -->
+  <dialog id="privacy-modal">
+    <article>
+      <h3>Privacy Policy</h3>
+      <p>Only information you provide via the quote form (name, email, phone, project details) is collected to respond
+        to your enquiry. Data is not shared with third parties beyond the form processor (Formspree). You can request
+        deletion at any time by emailing <a href="mailto:info@ashkanrahmani.co.uk">info@ashkanrahmani.co.uk</a>.</p>
+      <p>Cookies: Google Analytics only. You can block cookies in your browser settings.</p>
+      <button class="btn btn-small" data-close>Close</button>
+    </article>
+  </dialog>
+
+  <dialog id="terms-modal">
+    <article>
+      <h3>Terms of Service</h3>
+      <p>Quotes are valid for 14 days. A deposit may be required before work begins. Intellectual property transfers
+        upon full payment. Bugs discovered within 14 days of launch will be fixed at no extra cost.</p>
+      <button class="btn btn-small" data-close>Close</button>
+    </article>
+  </dialog>
+
+  <!-- Floating WhatsApp button -->
+  <a class="whatsapp-fab"
+    href="https://wa.me/447944552072?text=Hi%20Ash%20Tech%2C%20I%27d%20like%20to%20discuss%20a%20project."
+    target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="48" height="48" />
+  </a>
+
+  <script src="./app.js" defer></script>
 </body>
+
 </html>
